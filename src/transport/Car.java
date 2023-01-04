@@ -1,6 +1,16 @@
 package transport;
 
 public class Car {
+
+    private class Key {
+        private final boolean remoteStart;
+        private final boolean keylessAccess;
+
+        public Key(boolean remoteStart, boolean keylessAccess) {
+            this.remoteStart = remoteStart;
+            this.keylessAccess = keylessAccess;
+        }
+    }
     private final String brand;
     private final String model;
     private double engineVolume;
